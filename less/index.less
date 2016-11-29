@@ -1,0 +1,145 @@
+@cols:20;
+html,body,a,img,ul,li{
+  padding:0;
+  margin:0;
+  list-style: none;
+  text-decoration: none;
+}
+html,body{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+.clear(){
+  &:before,&:after{
+    content: "";
+    display: block;
+  }
+  &:after{
+    clear:both;
+  }
+}
+.loop(@type:m,@i:1) when (@i<= @cols){
+  .colw-@{type}-@{i}{
+    width: @i/@cols*100%;
+  }
+  .colh-@{type}-@{i}{
+    height: @i/@cols*100%;
+  }
+  .loop(@type,@i+1);
+}
+.loop();
+//小屏
+.header{
+  background:#168BD8;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+}
+.headerbox{
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo{
+  display:inline-block;
+  width:120px;
+  height:40px;
+  margin-top:5px;
+  background:url(../img/logo.png) no-repeat -2px 0;
+}
+.index{
+  margin:20px 0 0;
+  padding:0 15px;
+  font-family: "微软雅黑";
+  font-size:15px;
+  font-weight: 500;
+  color:#fff;
+}
+.index:hover{
+  color:#67CBFF;
+}
+.index1{
+  margin-left:50px;
+}
+.lianxi{
+  margin:30px 5px 0;
+  font-family: "微软雅黑";
+  font-size:12px;
+  font-weight: 500;
+  color:#fff;
+}
+.lianxi1{
+  margin-left:140px;
+}
+.lianxilast{
+  color:#FFDA28;
+}
+.conbox{
+  width:100%;
+  height:400%;
+  transition:margin-top 2s ease;
+}
+.con{
+  width:100%;
+  height:25%;
+  position:relative;
+}
+.con1{
+  background:url(../img/1.jpg) no-repeat center center;
+}
+.con2{
+  background:url(../img/2.jpg) no-repeat center center;
+}
+.con3{
+  background:url(../img/3.jpg) no-repeat center center;
+}
+.con4{
+  background:url(../img/4.jpg) no-repeat center center;
+}
+.yun1{
+  position:absolute;
+  background:url(../img/cloud_1_1d4924b.png) repeat-x;
+}
+.yun2{
+  position:absolute;
+  top:80px;
+  background:url(../img/cloud_2_a186193.png) repeat-x;
+}
+.yun3{
+  position:absolute;
+  top:200px;
+  background:url(../img/cloud_3_5ee0340.png) repeat-x;
+}
+.title{
+  width:501px;
+  height:158px;
+  background:url(../img/launch_deea86c.png) no-repeat;
+  position:absolute;
+  top:65px;
+  left:180px;
+}
+.feiji{
+  width:119px;
+  height:78px;
+  background:url(../img/flight_ade8ee2.png) no-repeat;
+  position:absolute;
+  top:40px;
+  left:470px;
+}
+.bottoms{
+  background:#0B67BE;
+  position:absolute;
+  bottom:0;
+}
+.forms{
+  width:340px;
+  height:300px;
+  border-radius: 5px;
+  background:#4ebffc;
+  position:absolute;
+  right:175px;
+  top:75px;
+}
