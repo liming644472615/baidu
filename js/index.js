@@ -18,13 +18,9 @@ $(function(){
         }
         flag=false;
         if(num*clienth>=clienth){
-            $(".lianxi1").css({
-                opacity:0
-            })
+            $(".lianxi1").animate({opacity:0},800);
         }else{
-            $(".lianxi1").css({
-                opacity:1
-            })
+            $(".lianxi1").animate({opacity:1},800);
         }
         $(".conbox").css({
             marginTop:-num*clienth
@@ -41,13 +37,9 @@ $(function(){
         }
         flag=false;
         if(num*clienth>=clienth){
-            $(".lianxi1").css({
-                opacity:0
-            })
+            $(".lianxi1").animate({opacity:0},800);
         }else{
-            $(".lianxi1").css({
-                opacity:1
-            })
+            $(".lianxi1").animate({opacity:1},800);
         }
         $(".conbox").css({
             marginTop:-num*clienth

@@ -223,7 +223,7 @@ body {
   height: 158px;
   background: url(../img/launch_deea86c.png) no-repeat;
   position: absolute;
-  top: 65px;
+  top: 105px;
   left: 180px;
 }
 .feiji {
@@ -231,13 +231,44 @@ body {
   height: 78px;
   background: url(../img/flight_ade8ee2.png) no-repeat;
   position: absolute;
-  top: 40px;
+  top: 90px;
   left: 470px;
 }
 .bottoms {
   background: #0B67BE;
   position: absolute;
   bottom: 0;
+}
+.tu1 {
+  width: 265px;
+  height: 175px;
+  position: absolute;
+  background: url("../img/hill_1_0d79217.png") no-repeat;
+  top: -50px;
+}
+.tu2 {
+  width: 63px;
+  height: 78px;
+  position: absolute;
+  background: url("../img/hill_2_540422f.png") no-repeat;
+  top: -13px;
+  right: 460px;
+}
+.tu3 {
+  width: 260px;
+  height: 175px;
+  position: absolute;
+  background: url("../img/hill_3_ace39fb.png") no-repeat;
+  top: -48px;
+  right: 50px;
+}
+.tu4 {
+  width: 242px;
+  height: 228px;
+  position: absolute;
+  background: url("../img/ship_1ad6734.png") no-repeat;
+  top: -192px;
+  left: 320px;
 }
 .forms {
   width: 340px;
@@ -246,5 +277,13 @@ body {
   background: #4ebffc;
   position: absolute;
   right: 175px;
-  top: 75px;
+  top: 125px;
+}
+.shu {
+  width: 447px;
+  height: 427px;
+  background: url(../img/brain_36a156f.png) no-repeat;
+  position: absolute;
+  right: 210px;
+  top: 120px;
 }
